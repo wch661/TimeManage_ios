@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D7W-Nq-nXi">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--回顾-->
+        <scene sceneID="gcy-i2-tj8">
+            <objects>
+                <viewController id="dbR-V6-HZa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uY0-cU-UqA"/>
+                        <viewControllerLayoutGuide type="bottom" id="0c5-pC-l5r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1II-TG-trI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="回顾" id="GzL-NV-RYF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVM-nM-5vT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="867"/>
+        </scene>
+        <!--今日-->
+        <scene sceneID="Icb-U3-e1s">
+            <objects>
+                <viewController id="a8O-3w-ere" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j6G-Mb-glZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="TCg-3K-0Hp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6jf-X3-dWS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="今日" id="yIS-eA-tDe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K0h-on-B6U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="205"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PtG-B0-juG">
+            <objects>
+                <tabBarController id="D7W-Nq-nXi" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="PXT-Zb-nGr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="a8O-3w-ere" kind="relationship" relationship="viewControllers" id="An9-xt-cTx"/>
+                        <segue destination="dbR-V6-HZa" kind="relationship" relationship="viewControllers" id="BrG-4l-Brh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ic8-j8-eR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="536"/>
+        </scene>
+    </scenes>
+</document>
