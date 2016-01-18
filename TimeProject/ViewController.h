@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic)NSMutableArray* appList;
+@property (strong, nonatomic) NSMutableArray* userAppList;
 
 @end
 

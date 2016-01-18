@@ -27,7 +27,7 @@
         <!--今日-->
         <scene sceneID="Icb-U3-e1s">
             <objects>
-                <viewController id="a8O-3w-ere" sceneMemberID="viewController">
+                <viewController id="a8O-3w-ere" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="j6G-Mb-glZ"/>
                         <viewControllerLayoutGuide type="bottom" id="TCg-3K-0Hp"/>
