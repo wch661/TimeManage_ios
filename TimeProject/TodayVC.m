@@ -6,15 +6,15 @@
 //  Copyright (c) 2015年 nju. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TodayVC.h"
 #import "MyDevice.h"
 #import "AppBase.h"
 
-@interface ViewController ()
+@interface TodayVC ()
 
 @end
 
-@implementation ViewController
+@implementation TodayVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -141,13 +141,11 @@ void initUserData (NSMutableArray *appList, NSMutableArray *userAppList) {
         userAppList = [[NSMutableArray alloc] init];
     for (int i =0; i<appList.count; i++) {
         NSString *u = ((AppBase*)[appList objectAtIndex:i]).appUrl;
-        //        NSString *n = ((AppBase*)[self.appList objectAtIndex:i]).appName;
+        //        NSString *n = ((AppBase*)[slf.appList objectAtIndex:i]).appName;
         if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:u]]) {
             [userAppList addObject:(AppBase*)[appList objectAtIndex:i]];
         }
     }
-    data = [NSKeyedArchiver archivedDataWithRootObject:userAppList];
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"AppTable"];
     
     for (int i =0; i < userAppList.count; i++) {
         NSString *u = ((AppBase*)[userAppList objectAtIndex:i]).appUrl;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TodayVC : UIViewController
 
 @property (strong, nonatomic)NSMutableArray* appList;
 @property (strong, nonatomic) NSMutableArray* userAppList;
