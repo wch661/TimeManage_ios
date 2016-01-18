@@ -14,6 +14,8 @@
 		7CC8843A1C0C2BD1003DF067 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC884391C0C2BD1003DF067 /* Images.xcassets */; };
 		7CC8843D1C0C2BD1003DF067 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8843B1C0C2BD1003DF067 /* LaunchScreen.xib */; };
 		7CC884491C0C2BD1003DF067 /* TimeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC884481C0C2BD1003DF067 /* TimeProjectTests.m */; };
+		7CD637551C4CD11900714D63 /* AppBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD637521C4CD11900714D63 /* AppBase.m */; };
+		7CD637561C4CD11900714D63 /* MyDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD637541C4CD11900714D63 /* MyDevice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		7CC884421C0C2BD1003DF067 /* TimeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC884471C0C2BD1003DF067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC884481C0C2BD1003DF067 /* TimeProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimeProjectTests.m; sourceTree = "<group>"; };
+		7CD637511C4CD11900714D63 /* AppBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppBase.h; sourceTree = "<group>"; };
+		7CD637521C4CD11900714D63 /* AppBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppBase.m; sourceTree = "<group>"; };
+		7CD637531C4CD11900714D63 /* MyDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDevice.h; sourceTree = "<group>"; };
+		7CD637541C4CD11900714D63 /* MyDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDevice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 		7CC8842B1C0C2BD1003DF067 /* TimeProject */ = {
 			isa = PBXGroup;
 			children = (
+				7CD637511C4CD11900714D63 /* AppBase.h */,
+				7CD637521C4CD11900714D63 /* AppBase.m */,
+				7CD637531C4CD11900714D63 /* MyDevice.h */,
+				7CD637541C4CD11900714D63 /* MyDevice.m */,
 				7CC884301C0C2BD1003DF067 /* AppDelegate.h */,
 				7CC884311C0C2BD1003DF067 /* AppDelegate.m */,
 				7CC884331C0C2BD1003DF067 /* ViewController.h */,
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CD637551C4CD11900714D63 /* AppBase.m in Sources */,
 				7CC884351C0C2BD1003DF067 /* ViewController.m in Sources */,
 				7CC884321C0C2BD1003DF067 /* AppDelegate.m in Sources */,
 				7CC8842F1C0C2BD1003DF067 /* main.m in Sources */,
+				7CD637561C4CD11900714D63 /* MyDevice.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +430,7 @@
 				7CC8844E1C0C2BD1003DF067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CC8844F1C0C2BD1003DF067 /* Build configuration list for PBXNativeTarget "TimeProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				7CC884511C0C2BD1003DF067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
