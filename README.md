@@ -10,8 +10,12 @@ TimeManage_ios
 
   未完成
   
-  
 # 项目进展
 
   暂无进展
+
+# 参考资料
+
+  ［1］http://blog.cnrainbird.com/index.php/2012/04/19/guan_yu_huo_qu_ios_ying_yong_lie_biao/
+  ［2］https://www.zhihu.com/question/19907735
   
