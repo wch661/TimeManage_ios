@@ -12,7 +12,16 @@ TimeManage_ios
   
 # 项目进展
 
-  暂无进展
+  1.能够根据已知的app url表，得到用户已安装的app，并在后台输出。
+  2.能够得到设备正在运行的进程表，并在后台输出。
+  3.能够将用户已安装的app在table view中显示出来。
+  
+
+# 项目所运用的部分
+
+  1.UIDevice 的运用。
+  2.UITableView 的运用。
+  3.NSMutableArray 的运用
 
 # 参考资料
 
