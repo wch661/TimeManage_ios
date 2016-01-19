@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C6FC8851C4E0F3100023570 /* userAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6FC8841C4E0F3100023570 /* userAppInfo.m */; };
+		7C6FC8881C4E362100023570 /* groupInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6FC8871C4E362100023570 /* groupInfo.m */; };
 		7CC8842F1C0C2BD1003DF067 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8842E1C0C2BD1003DF067 /* main.m */; };
 		7CC884321C0C2BD1003DF067 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC884311C0C2BD1003DF067 /* AppDelegate.m */; };
 		7CC884351C0C2BD1003DF067 /* TodayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC884341C0C2BD1003DF067 /* TodayVC.m */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C6FC8831C4E0F3100023570 /* userAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userAppInfo.h; sourceTree = "<group>"; };
+		7C6FC8841C4E0F3100023570 /* userAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userAppInfo.m; sourceTree = "<group>"; };
+		7C6FC8861C4E362100023570 /* groupInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupInfo.h; sourceTree = "<group>"; };
+		7C6FC8871C4E362100023570 /* groupInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupInfo.m; sourceTree = "<group>"; };
 		7CC884291C0C2BD1003DF067 /* TimeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC8842D1C0C2BD1003DF067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CC8842E1C0C2BD1003DF067 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +118,10 @@
 				7CD6375B1C4D052900714D63 /* appCell.m */,
 				7CD6375F1C4D1B9000714D63 /* userAppTable.h */,
 				7CD637601C4D1B9000714D63 /* userAppTable.m */,
+				7C6FC8831C4E0F3100023570 /* userAppInfo.h */,
+				7C6FC8841C4E0F3100023570 /* userAppInfo.m */,
+				7C6FC8861C4E362100023570 /* groupInfo.h */,
+				7C6FC8871C4E362100023570 /* groupInfo.m */,
 			);
 			path = TimeProject;
 			sourceTree = "<group>";
@@ -247,7 +257,9 @@
 				7CD637611C4D1B9000714D63 /* userAppTable.m in Sources */,
 				7CD6375C1C4D052900714D63 /* appCell.m in Sources */,
 				7CC884351C0C2BD1003DF067 /* TodayVC.m in Sources */,
+				7C6FC8851C4E0F3100023570 /* userAppInfo.m in Sources */,
 				7CC884321C0C2BD1003DF067 /* AppDelegate.m in Sources */,
+				7C6FC8881C4E362100023570 /* groupInfo.m in Sources */,
 				7CC8842F1C0C2BD1003DF067 /* main.m in Sources */,
 				7CD637561C4CD11900714D63 /* MyDevice.m in Sources */,
 			);

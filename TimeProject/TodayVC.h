@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "userAppTable.h"
 
 @interface TodayVC : UIViewController
 
-@property (strong, nonatomic)NSMutableArray* appList;
+@property (strong, nonatomic) NSMutableArray* appList;
 @property (strong, nonatomic) NSMutableArray* userAppList;
+@property (retain, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray* groupList;
+
+-(void) initUserData;
 
 @end
 

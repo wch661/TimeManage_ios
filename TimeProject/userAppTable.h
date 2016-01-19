@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) NSMutableArray *userAppList;
 
+- (void) initWithUserAppList: (NSMutableArray *)appList;
+
 @end

@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--回顾-->
@@ -36,137 +35,7 @@
                     <view key="view" contentMode="scaleToFill" id="6jf-X3-dWS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LQd-RN-gXY">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vse-AQ-3Zb">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新建分组名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESL-AQ-yAx">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PX1-Ct-uPn">
-                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEm-Ma-Vbn">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="确定"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdT-ow-tai">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <state key="normal" title="取消"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="PX1-Ct-uPn" firstAttribute="leading" secondItem="ESL-AQ-yAx" secondAttribute="trailing" constant="8" symbolic="YES" id="EFr-sj-S37"/>
-                                    <constraint firstItem="TdT-ow-tai" firstAttribute="top" secondItem="vse-AQ-3Zb" secondAttribute="top" constant="56" id="Fat-0Q-E1g"/>
-                                    <constraint firstItem="cEm-Ma-Vbn" firstAttribute="leading" secondItem="TdT-ow-tai" secondAttribute="trailing" constant="34" id="Gld-At-9Lt">
-                                        <variation key="widthClass=compact" constant="22"/>
-                                    </constraint>
-                                    <constraint firstItem="TdT-ow-tai" firstAttribute="bottom" secondItem="vse-AQ-3Zb" secondAttribute="bottomMargin" id="JMj-ek-QiZ"/>
-                                    <constraint firstItem="ESL-AQ-yAx" firstAttribute="leading" secondItem="vse-AQ-3Zb" secondAttribute="leading" constant="20" id="Q51-q0-MZ9"/>
-                                    <constraint firstItem="cEm-Ma-Vbn" firstAttribute="baseline" secondItem="TdT-ow-tai" secondAttribute="baseline" id="YQI-ZS-PAL"/>
-                                    <constraint firstAttribute="trailing" secondItem="cEm-Ma-Vbn" secondAttribute="trailing" constant="16" id="ej0-3M-pYS"/>
-                                    <constraint firstItem="PX1-Ct-uPn" firstAttribute="trailing" secondItem="vse-AQ-3Zb" secondAttribute="trailingMargin" id="hcC-JT-uh0"/>
-                                    <constraint firstItem="ESL-AQ-yAx" firstAttribute="centerY" secondItem="PX1-Ct-uPn" secondAttribute="centerY" id="hpV-dz-GKe"/>
-                                    <constraint firstItem="PX1-Ct-uPn" firstAttribute="centerX" secondItem="TdT-ow-tai" secondAttribute="centerX" id="uCM-VO-4in">
-                                        <variation key="widthClass=compact" constant="0.0"/>
-                                    </constraint>
-                                    <constraint firstItem="TdT-ow-tai" firstAttribute="top" secondItem="PX1-Ct-uPn" secondAttribute="bottom" constant="14" id="ub0-HD-pPf"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="ESL-AQ-yAx"/>
-                                        <exclude reference="PX1-Ct-uPn"/>
-                                        <exclude reference="cEm-Ma-Vbn"/>
-                                        <exclude reference="TdT-ow-tai"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="Q51-q0-MZ9"/>
-                                        <exclude reference="hpV-dz-GKe"/>
-                                        <exclude reference="EFr-sj-S37"/>
-                                        <exclude reference="hcC-JT-uh0"/>
-                                        <exclude reference="uCM-VO-4in"/>
-                                        <exclude reference="Fat-0Q-E1g"/>
-                                        <exclude reference="JMj-ek-QiZ"/>
-                                        <exclude reference="ub0-HD-pPf"/>
-                                        <exclude reference="Gld-At-9Lt"/>
-                                        <exclude reference="YQI-ZS-PAL"/>
-                                        <exclude reference="ej0-3M-pYS"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="ESL-AQ-yAx"/>
-                                        <include reference="PX1-Ct-uPn"/>
-                                        <include reference="cEm-Ma-Vbn"/>
-                                        <include reference="TdT-ow-tai"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="Q51-q0-MZ9"/>
-                                        <include reference="hpV-dz-GKe"/>
-                                        <include reference="EFr-sj-S37"/>
-                                        <include reference="hcC-JT-uh0"/>
-                                        <include reference="uCM-VO-4in"/>
-                                        <include reference="Fat-0Q-E1g"/>
-                                        <include reference="JMj-ek-QiZ"/>
-                                        <include reference="ub0-HD-pPf"/>
-                                        <include reference="Gld-At-9Lt"/>
-                                        <include reference="YQI-ZS-PAL"/>
-                                        <include reference="ej0-3M-pYS"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="LQd-RN-gXY" firstAttribute="top" secondItem="j6G-Mb-glZ" secondAttribute="bottom" constant="8" symbolic="YES" id="7yf-WF-Deg"/>
-                            <constraint firstItem="vse-AQ-3Zb" firstAttribute="top" secondItem="j6G-Mb-glZ" secondAttribute="bottom" id="C7R-yF-CAD">
-                                <variation key="widthClass=compact" constant="8"/>
-                            </constraint>
-                            <constraint firstItem="LQd-RN-gXY" firstAttribute="trailing" secondItem="6jf-X3-dWS" secondAttribute="trailingMargin" id="ZYz-WQ-5y2"/>
-                            <constraint firstItem="LQd-RN-gXY" firstAttribute="centerY" secondItem="6jf-X3-dWS" secondAttribute="centerY" id="lP2-uE-bAx"/>
-                            <constraint firstItem="LQd-RN-gXY" firstAttribute="leading" secondItem="6jf-X3-dWS" secondAttribute="leadingMargin" id="rXo-YT-Qx7"/>
-                            <constraint firstAttribute="trailing" secondItem="vse-AQ-3Zb" secondAttribute="trailing" id="y3s-vR-YQl">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="LQd-RN-gXY"/>
-                                <exclude reference="vse-AQ-3Zb"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="7yf-WF-Deg"/>
-                                <exclude reference="ZYz-WQ-5y2"/>
-                                <exclude reference="lP2-uE-bAx"/>
-                                <exclude reference="rXo-YT-Qx7"/>
-                                <exclude reference="C7R-yF-CAD"/>
-                                <exclude reference="y3s-vR-YQl"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="LQd-RN-gXY"/>
-                                <include reference="vse-AQ-3Zb"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="7yf-WF-Deg"/>
-                                <include reference="ZYz-WQ-5y2"/>
-                                <include reference="lP2-uE-bAx"/>
-                                <include reference="rXo-YT-Qx7"/>
-                                <include reference="C7R-yF-CAD"/>
-                                <include reference="y3s-vR-YQl"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="应用列表" id="Erc-fA-fkb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Qmh-mD-0oX"/>
